@@ -45,6 +45,8 @@ class RolesSeeder extends Seeder
        
         $userGeneral = User::create([
             'name' => "ugeneral",
+            'ap_paterno'=>"ugeneral",
+            'ap_materno'=>"ugeneral",
             'email' => "ugeneral@admin.com",
             'password' => Hash::make('12345678'),
         ]);
@@ -52,6 +54,8 @@ class RolesSeeder extends Seeder
 
         $userColaborador = User::create([
             'name' => "ucolabora",
+            'ap_paterno'=>"ucolabora",
+            'ap_materno'=>"ucolabora",
             'email' => "ucolabora@admin.com",
             'password' => Hash::make('12345678'),
         ]);
@@ -59,6 +63,8 @@ class RolesSeeder extends Seeder
 
         $superAdmin = User::create([
             'name' => "uadministrador",
+            'ap_paterno'=>"uadministrador",
+            'ap_materno'=>"uadministrador",
             'email' => "uadministrador@admin.com",
             'password' => Hash::make('12345678'),
         ]);
@@ -66,6 +72,8 @@ class RolesSeeder extends Seeder
 
         $ayudaAdmin = User::create([
             'name' => "uayudante",
+            'ap_paterno'=>"uayudante",
+            'ap_materno'=>"uayudante",
             'email' => "uayudante@admin.com",
             'password' => Hash::make('12345678'),
         ]);
