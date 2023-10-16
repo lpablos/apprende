@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 
-
 class ProfileController extends Controller
 {
     /**
@@ -17,8 +16,6 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
-        $user = Auth::user();
-        
         return view('profile.edit', [
             'user' => $request->user(),
         ]);
