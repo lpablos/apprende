@@ -57,4 +57,34 @@ class ProfileController extends Controller
 
         return Redirect::to('/');
     }
+
+    // Dashboard con las información
+    public function dashboard(Request $request): View
+    {   
+        
+        return view('application.pages.dashboard_index_user', [
+            'user' => $request->user(),
+        ]);
+    }
+
+    public function editUser(Request $request): View
+    {
+        return view('application.pages.dashboard_edit_user', [
+            'user' => $request->user(),
+        ]);
+    }
+
+    public function editPassword(Request $request): View
+    {
+        return view('application.pages.dashboard_rpassword_user', [
+            'user' => $request->user(),
+        ]);
+    }
+
+    public function deleteAccount(Request $request): View
+    {
+        return view('application.pages.dashboard_delete_account', [
+            'user' => $request->user(),
+        ]);
+    }
 }

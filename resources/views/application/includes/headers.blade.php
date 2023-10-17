@@ -153,7 +153,7 @@
                                                 <li class="menu__item">
                                                     <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                     <div class="menu__item-submenu-offset"></div>
-                                                    <a class="menu__item-link" href="account-login.html">
+                                                    <a class="menu__item-link" href="{{ route('login') }}">
                                                         Iniciar Sessión
                                                     </a>
                                                 </li>
@@ -387,7 +387,16 @@
                                         </ul>
                                         <div class="account-menu__divider"></div>
                                         <ul class="account-menu__links">
-                                            <li><a href="account-login.html">Logout</a></li>
+                                            
+                                            <form method="POST" action="{{ route('logout') }}">
+                                                @csrf
+                                                
+                                                <x-dropdown-link :href="route('logout')"
+                                                        onclick="event.preventDefault();
+                                                                    this.closest('form').submit();">
+                                                    {{ __('Log Out') }}
+                                                </x-dropdown-link>
+                                            </form>
                                         </ul>
                                     </div>
                                 </div>
