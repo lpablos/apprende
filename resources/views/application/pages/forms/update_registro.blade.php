@@ -1,5 +1,5 @@
-<form action="{{ route('register' )}}" method="post">
-    @csrf
+<form action="{{ route('dashboard.usuario.update') }}" method="POST">
+        @csrf
     <div class="form-group">
         <label>Nombre</label>
         <input name="name" type="text" class="form-control" placeholder="Nombre" value="{{ $user['name']}}" required>

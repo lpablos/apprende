@@ -35,12 +35,13 @@ Route::middleware('auth')->group(function () {
         Route::get('/usuario',[ProfileController::class, 'editUser'])->name('dashboard.usuario');  
         Route::get('/password',[ProfileController::class, 'editPassword'])->name('dashboard.password');  
         Route::get('/delete-account',[ProfileController::class, 'deleteAccount'])->name('dashboard.delete.account');      
+        Route::post('/usuario-update',[ProfileController::class, 'update'])->name('dashboard.usuario.update');  
     });
 
 
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    // Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 require __DIR__.'/auth.php';

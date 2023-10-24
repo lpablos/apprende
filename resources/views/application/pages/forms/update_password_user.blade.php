@@ -1,16 +1,17 @@
-<form action="{{ route('register' )}}" method="post">
+<form action="{{ route('password.update') }}" method="post">
     @csrf
+    @method('put')    
     <div class="form-group">
-        <label for="profile-first-name">Contraseña actual</label>
-        <input type="text" class="form-control" id="profile-first-name" placeholder="Contraseña actual">
+        <label for="current_password">Contraseña actual</label>
+        <input type="password" name="current_password" class="form-control" id="current_password" placeholder="Contraseña actual">
     </div>
     <div class="form-group">
-        <label for="profile-last-name">Nueva Contraseña</label>
-        <input type="text" class="form-control" id="profile-last-name" placeholder="Nueva Contraseña">
+        <label for="password">Nueva Contraseña</label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="Nueva Contraseña">
     </div>
     <div class="form-group">
-        <label for="profile-email">Confirmar Contraseña</label>
-        <input type="email" class="form-control" id="profile-email" placeholder="Confirmar Contraseña">
+        <label for="password_confirmation">Confirmar Contraseña</label>
+        <input type="password" name="password_confirmation" class="form-control" id="password_confirmation" placeholder="Confirmar Contraseña">
     </div>  
     <button type="submit" class="btn btn-primary mt-4">Actualizar</button>
 </form>
