@@ -22,7 +22,7 @@
                         <div class="card-body">
                             <div class="row no-gutters">
                                 <div class="col-12">
-                                    @include('application.pages.forms.update_delete_account')
+                                    @include('application.pages.forms.delete_account')
                                 </div>
                             </div>
                         </div>

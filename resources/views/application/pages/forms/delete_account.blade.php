@@ -1,4 +1,5 @@
-<form action="{{ route('register' )}}" method="post">
+<form action="{{ route('dashboard.baja.cuenta' )}}" method="post">
+    @method('DELETE')
     @csrf
     <div class="form-group">
         <label for="profile-first-name">

@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/password',[ProfileController::class, 'editPassword'])->name('dashboard.password');  
         Route::get('/delete-account',[ProfileController::class, 'deleteAccount'])->name('dashboard.delete.account');      
         Route::post('/usuario-update',[ProfileController::class, 'update'])->name('dashboard.usuario.update');  
+        Route::delete('/baja-cuenta-usuario', [ProfileController::class, 'destroy'])->name('dashboard.baja.cuenta');
     });
 
 
