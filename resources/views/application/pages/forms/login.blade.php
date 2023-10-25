@@ -28,11 +28,11 @@
     <button type="submit" class="btn btn-primary mt-4">Iniciar</button>
     <p class="text-center">Ó</p>
     <div class="row mt-5">
-        <button class="btn btn-primary btn-lg col-12 mlrt-3 mt-3">
+        <button class="btn btn-primary btn-lg col-12 mlrt-3 mt-3 responsive-font-example">
             <i class="fab fa-facebook-f"></i> 
             Continuar con Face Book
         </button>
-        <button class="btn btn-primary btn-lg col-12 mlr-3 mt-3" >
+        <button class="btn btn-primary btn-lg col-12 mlr-3 mt-3 responsive-font-example" >
             <i class="fab fa-google "></i> 
             Continuar con Google
         </button>

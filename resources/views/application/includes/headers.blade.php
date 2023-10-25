@@ -6,8 +6,9 @@
             <div class="container">
                 <div class="mobile-header__body">
                     <button class="mobile-header__menu-button">
-                        <svg width="18px" height="14px">
-                            <use xlink:href="images/sprite.svg#menu-18x14"></use>
+                        <svg width="18px" height="14px">                        
+                        <use xlink:href="{{ asset('images/sprite.svg#menu-18x14') }}"></use>
+                            <!-- <use xlink:href="images/sprite.svg#menu-18x14"></use> -->
                         </svg>
                     </button>
                     <a class="mobile-header__logo" href="index.html">
@@ -130,8 +131,8 @@
                                     <a class="nav-links__item-link" href="{{ route('home') }}">
                                         <div class="nav-links__item-body">
                                             Inicio
-                                            <svg class="nav-links__item-arrow" width="9px" height="6px">
-                                                <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                            <svg class="nav-links__item-arrow" width="9px" height="6px">                                            
+                                                <use xlink:href="{{ asset('images/sprite.svg#arrow-rounded-down-9x6') }}"></use>
                                             </svg>
                                         </div>
                                     </a>                                
@@ -141,7 +142,7 @@
                                         <div class="nav-links__item-body">
                                             Cuenta de Usuario
                                             <svg class="nav-links__item-arrow" width="9px" height="6px">
-                                                <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                                <use xlink:href="{{ asset('images/sprite.svg#arrow-rounded-down-9x6') }}"></use>
                                             </svg>
                                         </div>
                                     </a>
@@ -198,10 +199,10 @@
                                 <button type="button" class="indicator__button">
                                     <span class="indicator__area">
                                         <svg class="indicator__icon" width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#search-20"></use>
+                                            <use xlink:href="{{ asset('images/sprite.svg#search-20') }}"></use>
                                         </svg>
                                         <svg class="indicator__icon indicator__icon--open" width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#cross-20"></use>
+                                            <use xlink:href="{{ asset('images/sprite.svg#cross-20') }}"></use>
                                         </svg>
                                     </span>
                                 </button>
@@ -212,7 +213,7 @@
                                                 <input class="search__input" name="search" placeholder="Search over 10,000 products" aria-label="Site search" type="text" autocomplete="off">
                                                 <button class="search__button search__button--type--submit" type="submit">
                                                     <svg width="20px" height="20px">
-                                                        <use xlink:href="images/sprite.svg#search-20"></use>
+                                                        <use xlink:href="{{ asset('images/sprite.svg#search-20') }}"></use>
                                                     </svg>
                                                 </button>
                                                 <div class="search__border"></div>
@@ -226,7 +227,7 @@
                                 <a href="wishlist.html" class="indicator__button">
                                     <span class="indicator__area">
                                         <svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#heart-20"></use>
+                                            <use xlink:href="{{ asset('images/sprite.svg#heart-20') }}"></use>
                                         </svg>
                                         <span class="indicator__value">0</span>
                                     </span>
@@ -236,7 +237,7 @@
                                 <a href="cart.html" class="indicator__button">
                                     <span class="indicator__area">
                                         <svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#cart-20"></use>
+                                            <use xlink:href="{{ asset('images/sprite.svg#cart-20') }}"></use>
                                         </svg>
                                         <span class="indicator__value">3</span>
                                     </span>
@@ -249,7 +250,7 @@
                                                 <div class="dropcart__product">
                                                     <div class="product-image dropcart__product-image">
                                                         <a href="product.html" class="product-image__body">
-                                                            <img class="product-image__img" src="images/products/product-1.jpg" alt="">
+                                                            <img class="product-image__img" src="{{ asset('images/products/product-1.jpg') }}" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="dropcart__product-info">
@@ -265,14 +266,14 @@
                                                     </div>
                                                     <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
                                                         <svg width="10px" height="10px">
-                                                            <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                            <use xlink:href="{{ asset('images/sprite.svg#cross-10') }}"></use>
                                                         </svg>
                                                     </button>
                                                 </div>
                                                 <div class="dropcart__product">
                                                     <div class="product-image dropcart__product-image">
                                                         <a href="product.html" class="product-image__body">
-                                                            <img class="product-image__img" src="images/products/product-2.jpg" alt="">
+                                                            <img class="product-image__img" src="{{ asset('images/products/product-2.jpg') }}" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="dropcart__product-info">
@@ -284,14 +285,14 @@
                                                     </div>
                                                     <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
                                                         <svg width="10px" height="10px">
-                                                            <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                            <use xlink:href="{{ asset('images/sprite.svg#cross-10') }}"></use>
                                                         </svg>
                                                     </button>
                                                 </div>
                                                 <div class="dropcart__product">
                                                     <div class="product-image dropcart__product-image">
                                                         <a href="product.html" class="product-image__body">
-                                                            <img class="product-image__img" src="images/products/product-5.jpg" alt="">
+                                                            <img class="product-image__img" src="{{ asset('images/products/product-5.jpg') }}" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="dropcart__product-info">
@@ -306,7 +307,7 @@
                                                     </div>
                                                     <button type="button" class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon">
                                                         <svg width="10px" height="10px">
-                                                            <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                            <use xlink:href="{{ asset('images/sprite.svg#cross-10') }}"></use>
                                                         </svg>
                                                     </button>
                                                 </div>
@@ -344,13 +345,17 @@
                                 <a href="account-login.html" class="indicator__button">
                                     <span class="indicator__area">
                                         <svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#person-20"></use>
+                                            <use xlink:href="{{ asset('images/sprite.svg#person-20') }}"></use>
                                         </svg>
                                     </span>
                                 </a>
                                 <div class="indicator__dropdown">
-                                    <div class="account-menu">
-                                        <form class="account-menu__form">
+                                    <div class="account-menu"> 
+                                        @guest
+                                        <div class="account-menu__form mt-5">
+                                            @include('application.pages.forms.login')
+                                        </div>                                        
+                                        <!-- <form class="account-menu__form">
                                             <div class="account-menu__form-title">Log In to Your Account</div>
                                             <div class="form-group">
                                                 <label for="header-signin-email" class="sr-only">Email address</label>
@@ -367,23 +372,25 @@
                                                 <button type="submit" class="btn btn-primary btn-sm">Login</button>
                                             </div>
                                             <div class="account-menu__form-link"><a href="account-login.html">Create An Account</a></div>
-                                        </form>
+                                        </form> -->
                                         <div class="account-menu__divider"></div>
+                                        @endguest
+                                        @auth
                                         <a href="account-dashboard.html" class="account-menu__user">
                                             <div class="account-menu__user-avatar">
-                                                <img src="images/avatars/avatar-3.jpg" alt="">
+                                                <img src="{{ asset('images/avatars/avatar-3.jpg') }}" alt="">
                                             </div>
                                             <div class="account-menu__user-info">
-                                                <div class="account-menu__user-name">Helena Garcia</div>
-                                                <div class="account-menu__user-email">stroyka@example.com</div>
+                                                <div class="account-menu__user-name">{{auth()->user()->name.' '.auth()->user()->ap_paterno.' '.auth()->user()->ap_materno}}</div>
+                                                <div class="account-menu__user-email">{{auth()->user()->email}}</div>
                                             </div>
                                         </a>
                                         <div class="account-menu__divider"></div>
                                         <ul class="account-menu__links">
-                                            <li><a href="account-profile.html">Edit Profile</a></li>
-                                            <li><a href="account-orders.html">Order History</a></li>
-                                            <li><a href="account-addresses.html">Addresses</a></li>
-                                            <li><a href="account-password.html">Password</a></li>
+                                            <li><a href="{{ route('dashboard.index')}}">Panel</a></li>
+                                            <li><a href="{{ route('dashboard.usuario')}}">Editar Perfil</a></li>
+                                            <li><a href="{{ route('dashboard.password')}}">Contraseña</a></li>
+                                            <li><a href="{{ route('dashboard.delete.account')}}">Eliminar Cuenta</a></li>                                            
                                         </ul>
                                         <div class="account-menu__divider"></div>
                                         <ul class="account-menu__links">
@@ -398,6 +405,7 @@
                                                 </x-dropdown-link>
                                             </form>
                                         </ul>
+                                        @endauth
                                     </div>
                                 </div>
                             </div>
